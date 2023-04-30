@@ -4,7 +4,7 @@ import throttle from 'lodash.throttle';
 
 const PLAYER_CURRENT_TIME = "videoplayer-current-time"
 
-const player = new Player('vimeo-player',
+const player = new Vimeo.Player('vimeo-player',
     {
         id: 19231868,
         width: 640

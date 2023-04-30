@@ -2,23 +2,30 @@ import player  from '@vimeo/player';
 
 import throttle from 'lodash.throttle';
 
-const PLAYER_CURRENT_TIME = "videoplayer-current-time"
-const iframe = document.querySelector('iframe');
-const player = new Vimeo.Player(iframe);
+// const PLAYER_CURRENT_TIME = "videoplayer-current-time"
+// const iframe = document.querySelector('iframe');
+// const player = new Vimeo.Player(iframe);
 
-function onPlayerCurrentTime({ seconds }) {
-    localStorage.setItem(PLAYER_CURRENT_TIME, seconds);
-}
-player.on('timeupdate', throttle(onPlayerCurrentTime, 1000));
+// function onPlayerCurrentTime({ seconds }) {
+//     localStorage.setItem(PLAYER_CURRENT_TIME, seconds);
+// }
+// player.on('timeupdate', throttle(onPlayerCurrentTime, 1000));
 
 
-setPlayerCurrentTime()
+// setPlayerCurrentTime()
 
-function setPlayerCurrentTime() {
-    if (!localStorage.getItem(PLAYER_CURRENT_TIME)) {
-        return
-    }
-    player.setCurrentTime(localStorage.getItem(PLAYER_CURRENT_TIME))
-}
+// function setPlayerCurrentTime() {
+//     if (!localStorage.getItem(PLAYER_CURRENT_TIME)) {
+//         return
+//     }
+//     player.setCurrentTime(localStorage.getItem(PLAYER_CURRENT_TIME))
+// }
+// const player = new Player('handstick', {
+//     id: 19231868,
+//     width: 640
+// });
 
+// player.on('play', function() {
+//     console.log('played the video!');
+// });
 

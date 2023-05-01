@@ -31,7 +31,7 @@ function formFillOut() {
 
         formData = JSON.parse(data);
         Object.entries(formData).forEach(([key, value]) => {
-            form[key].value = value;
+            formEl[key].value = value;
         })
     } catch(e){
 
